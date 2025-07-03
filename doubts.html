@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMate - Ask Doubts</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .form-section {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .form-section h2 {
+      color: #4a90e2;
+    }
+    .form-section input, .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .form-section button {
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .form-section button:hover {
+      background-color: #357ac8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>❓ Ask Doubts</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="planner.html">Daily Planner</a></li>
+        <li><a href="motivation.html">Motivation Corner</a></li>
+        <li><a href="doubts.html">Ask Doubts</a></li>
+        <li><a href="alerts.html">Hackathon Alerts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Have a question? Ask away! 📝</h2>
+      <p>We're here to help. Your doubt could help others too!</p>
+      <form>
+  <label for="name">Name (Optional):</label>
+  <input type="text" id="name" name="name" placeholder="You can stay anonymous">
+
+  <label for="doubt">Your Doubt:</label>
+  <textarea id="doubt" name="doubt" rows="5" placeholder="Type your question here..."></textarea>
+
+  <button type="button" onclick="alert('Thank you for your question! We’ll get back to you soon 😊')">
+    Submit Doubt
+  </button>
+</form>
+
+<button onclick="alert('Test successful!')">Test Alert</button>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💙 by Vaishnavi</p>
+  </footer>
+</body>
+</html>

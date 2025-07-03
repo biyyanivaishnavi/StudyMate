@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyMate - Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🗓️ Daily Planner</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Study Resources</a></li>
+        <li><a href="planner.html">Daily Planner</a></li>
+        <li><a href="motivation.html">Motivation Corner</a></li>
+        <li><a href="doubts.html">Ask Doubts</a></li>
+        <li><a href="alerts.html">Hackathon Alerts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Plan Your Day 💡</h2>
+      <p>Stay organized and productive. Add your daily study tasks below:</p>
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <button onclick="addTask()">Add Task</button>
+
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💙 by Vaishnavi</p>
+  </footer>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById('taskInput');
+      const taskText = input.value.trim();
+      if (taskText !== '') {
+        const li = document.createElement('li');
+        li.textContent = taskText;
+        document.getElementById('taskList').appendChild(li);
+        input.value = '';
+      }
+    }
+  </script>
+</body>
+</html>
